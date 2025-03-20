@@ -433,7 +433,7 @@ class MyApp extends android.app.Application {
 The configurable parameters provided by the Elastic APM agent aim to help configuring common use cases in an easy way, in most of the cases it means to act as a facade between your application and the OpenTelemetry Java SDK that this agent is built on top. If your project requires to configure more advanced aspects of the overall APM processes, you could directly apply that configuration using the [OpenTelemetry SDK](https://opentelemetry.io/docs/instrumentation/java/getting-started/), which becomes available for you to use within your project by adding the Elastic agent plugin, as explained in [the agent setup guide](/reference/setup.md). Said configuration will be used by the Elastic agent for the [signals](https://opentelemetry.io/docs/concepts/signals/) it sends out of the box.
 
 
-## Dynamic configuration ![dynamic config](../images/dynamic-config.svg "") [configuration-dynamic]
+## Dynamic configuration ![dynamic config](images/dynamic-config.svg "") [configuration-dynamic]
 
 Configuration options marked with Dynamic true can be changed at runtime when set from Kibana’s [central configuration](docs-content://solutions/observability/apps/apm-agent-central-configuration.md).
 
