@@ -21,7 +21,7 @@ in Elastic APM.
 
 As part of our sample app, we’re going to launch a simple local backend service that will handle our
 app’s HTTP requests. The backend service is instrumented with
-the [Elastic APM Java agent](https://www.elastic.co/guide/en/apm/agent/java/current/index.html) to
+the [Elastic APM Java agent](https://www.elastic.co/docs/reference/apm/agents/java) to
 collect
 and send its own APM data over to Elastic APM, allowing it to correlate the mobile interactions with
 the processing of the backend requests.

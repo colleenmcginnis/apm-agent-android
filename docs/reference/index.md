@@ -36,14 +36,14 @@ For distributed tracing to work properly, your backend services must be configur
 
 The agent attaches [session](#session) information to each span and log generated from your application. This allows you to create queries that group all the telemetry that belongs to a session and form a session event timeline. This is useful to identify the most common actions performed by your users, as well as tracing the steps leading up to errors they may encounter.
 
-For example, let's say you have a screen "A" in your app that can be opened from other screens, such as "B". If you create a log event when the user clicks on a button on screen "B" that takes them to screen "A", along with a log when screen "A" opens (or a span if you'd like to measure how long it takes for screen "A" to fully load), both items will contain a `session.id` attribute with the same value per session. This enables you to create {{es}} queries, for example in {{kib}}'s [Discover tool](https://www.elastic.co/guide/en/kibana/current/discover.html), to list all events during that session and better understand a user's journey within your application.
+For example, let's say you have a screen "A" in your app that can be opened from other screens, such as "B". If you create a log event when the user clicks on a button on screen "B" that takes them to screen "A", along with a log when screen "A" opens (or a span if you'd like to measure how long it takes for screen "A" to fully load), both items will contain a `session.id` attribute with the same value per session. This enables you to create {{es}} queries, for example in {{kib}}'s [Discover tool](docs-content://explore-analyze/discover.md), to list all events during that session and better understand a user's journey within your application.
 
 ### More
 
 Since the agent not only configures the [OpenTelemetry SDK](https://opentelemetry.io/docs/languages/java/) but also provides [direct access](manual-instrumentation.md) to its features, you can generate your own data in ways that best suit your needs and take advantage of {{stack}}'s tools, such as:
 
- * [Creating alerts](https://www.elastic.co/guide/en/kibana/current/alerting-getting-started.html) when something interesting happens (for example, when an error is recorded)
- * [Building custom dashboards](https://www.elastic.co/guide/en/kibana/current/dashboard.html) to display your data the way you need to see it
+ * [Creating alerts](docs-content://explore-analyze/alerts-cases.md) when something interesting happens (for example, when an error is recorded)
+ * [Building custom dashboards](docs-content://explore-analyze/dashboards.md) to display your data the way you need to see it
  * [Much more](https://www.elastic.co/kibana/features)
 
 ## Features

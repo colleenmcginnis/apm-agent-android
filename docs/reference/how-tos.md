@@ -50,7 +50,7 @@ The export endpoint is where your app's telemetry is sent, so it's required to i
 
 ### For Serverless deployments
 
-On a [Serverless deployment](https://www.elastic.co/guide/en/serverless/current/intro.html), open {{kib}} and find **Add data** in the main menu. Alternatively, you can use the [global search field](docs-content://explore-analyze/find-and-organize/find-apps-and-objects.md) and search for "Observability Onboarding".
+On a [Serverless deployment](docs-content://deploy-manage/deploy/elastic-cloud/serverless.md), open {{kib}} and find **Add data** in the main menu. Alternatively, you can use the [global search field](docs-content://explore-analyze/find-and-organize/find-apps-and-objects.md) and search for "Observability Onboarding".
 
 Then select **Application**, as shown below:
 
@@ -74,7 +74,7 @@ Your export endpoint URL is the value for the **`OTEL_EXPORTER_OTLP_ENDPOINT`** 
 
 ### For Cloud Hosted and self-managed deployments
 
-For [Cloud Hosted](https://www.elastic.co/guide/en/cloud/current/ec-getting-started.html) and [self-managed](https://www.elastic.co/guide/en/elastic-stack/current/overview.html) deployments, the export endpoint (also known as [EDOT Collector](https://elastic.github.io/opentelemetry/edot-collector/index.html)) is not available out of the box at the moment. You can still create your own service by following [creating and configuring a standalone EDOT Collector](https://elastic.github.io/opentelemetry/edot-collector/config/default-config-standalone.html).
+For [Cloud Hosted](docs-content://deploy-manage/deploy/elastic-cloud/cloud-hosted.md) and [self-managed](docs-content://get-started/the-stack.md) deployments, the export endpoint (also known as [EDOT Collector](https://elastic.github.io/opentelemetry/edot-collector/index.html)) is not available out of the box at the moment. You can still create your own service by following [creating and configuring a standalone EDOT Collector](https://elastic.github.io/opentelemetry/edot-collector/config/default-config-standalone.html).
 
 ## How to create an API Key [create-api-key]
 
